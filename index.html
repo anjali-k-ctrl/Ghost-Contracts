@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ghost Contracts</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>👻 Ghost Contracts</h1>
+    <p class="subtitle">Understand what you're signing — job offers, leases, loan terms, and more.</p>
+    
+    <label class="upload-label">
+      📄 Upload Contract
+      <input type="file" id="fileInput" />
+    </label>
+    <button onclick="analyzeFile()">Analyze Document</button>
+
+    <div id="results" class="results"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
