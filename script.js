@@ -52,4 +52,13 @@ function analyzeInput() {
     });
 }
 
+document.getElementById('fileInput').addEventListener('change', function () {
+  const file = this.files[0];
+  const fileNameDisplay = document.getElementById('fileName');
+  if (file) {
+    fileNameDisplay.textContent = `📁 Selected: ${file.name}`;
+  } else {
+    fileNameDisplay.textContent = '';
+  }
+});
 
